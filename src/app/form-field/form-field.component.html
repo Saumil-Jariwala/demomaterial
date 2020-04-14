@@ -1,0 +1,23 @@
+<mat-form-field>
+  <input matInput placeholder="Input" [(ngModel)]="Input"/>
+</mat-form-field>
+<br>
+Entered Value Is: {{Input}}
+
+<br><br>
+<mat-form-field>
+  <textarea matInput placeholder="Text Area" [(ngModel)]="TextArea"></textarea>
+</mat-form-field>
+<br>
+Entered Value Is: {{TextArea}}
+
+<br><br>
+<mat-form-field>
+  <mat-select placeholder="Select" [(ngModel)]="select">
+    <mat-option value="option1">Option1</mat-option>
+    <mat-option value="option2">Option2</mat-option>
+    <mat-option value="option3">Option3</mat-option>
+  </mat-select>
+</mat-form-field>
+<br>
+Selected Value Is: {{select}}

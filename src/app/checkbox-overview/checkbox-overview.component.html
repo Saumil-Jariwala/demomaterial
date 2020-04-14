@@ -1,0 +1,23 @@
+=== Checkbox ====
+<br><br>
+<mat-checkbox class="example-margin" [(ngModel)]="checked">Check Me!</mat-checkbox>
+  <br>
+  Checked me Or not!: {{checked}}
+
+<br><br>
+=== Radio Button ===
+<br><br>
+<mat-radio-group [(ngModel)]="labelPosition">
+  <mat-radio-button class="example-margin" value="after">After</mat-radio-button>
+  <mat-radio-button class="example-margin" value="before">Before</mat-radio-button>
+</mat-radio-group>
+<br>
+  Radio me Or not!: {{labelPosition}}
+
+<br><br>
+=== Disabled Using Checkbox ===
+<br><br>
+<mat-checkbox class="example-margin" [(ngModel)]="isDisabled">If you check me, I will disable below textbox!</mat-checkbox>
+
+<br><br>
+<input type="text"  [(disabled)]="isDisabled"/>
